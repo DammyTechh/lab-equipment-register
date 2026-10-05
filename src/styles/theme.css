@@ -1,0 +1,59 @@
+/*
+ * Lab Equipment Register's design. Shares every screen and component with
+ * the platform; differs in typeface, shape and tone.
+ *
+ *   Typeface  Source Sans 3: humanist and open, where the reference design is
+ *             geometric. Chosen because it has every Yoruba letter (ẹ ọ ṣ ǹ
+ *             and the tone marks); IBM Plex Sans, the first candidate, has
+ *             no ṣ and would garble names.
+ *   Shape     squarer corners throughout: an institutional register rather
+ *             than an app.
+ *   Tone      navy and cool greys, with amber kept for scanning and focus.
+ *
+ * Brand navy and amber come from deploy/env (VITE_BRAND_PRIMARY,
+ * VITE_BRAND_ACCENT); the tints below are tuned to them. Every text colour
+ * meets WCAG AA (4.5:1) on the surfaces it is used on; the weakest pair,
+ * muted ink on the sunken surface, is 5.2:1.
+ */
+
+@import '@fontsource/source-sans-3/400.css';
+@import '@fontsource/source-sans-3/500.css';
+@import '@fontsource/source-sans-3/600.css';
+@import '@fontsource/source-sans-3/700.css';
+
+:root,
+[data-theme='light'] {
+  --surface-page:    #f2f4f7;
+  --surface-sunken:  #e8ecf1;
+  --surface-plate:   #0f2236;
+
+  --line-subtle:     #e1e6ed;
+  --line-strong:     #b4bfcc;
+
+  --ink-strong:      #0f1b2a;
+  --ink-body:        #2a3646;
+  --ink-muted:       #566272;
+  --plate-muted:     #c9d4e2;
+
+  --brand-press:     #163d5d;
+  --brand-surface:   #e5edf5;
+  --accent-ink:      #2b1d00;
+
+  --signal-calm-ink:  #45505e;
+  --signal-calm-tint: #e8ecf1;
+
+  --overlay-scrim:   rgba(9, 15, 26, 0.56);
+  --shadow-raise:    0 1px 2px rgba(15, 27, 42, 0.08);
+  --shadow-sheet:    0 -8px 32px rgba(15, 27, 42, 0.16);
+  --shadow-sticker:  0 2px 0 rgba(15, 27, 42, 0.14);
+}
+
+:root {
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+
+  --font-sans: 'Source Sans 3', 'Helvetica Neue', Helvetica, sans-serif;
+}

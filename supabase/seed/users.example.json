@@ -1,0 +1,35 @@
+{
+  "defaultPassword": "set-a-strong-one-and-rotate",
+  "users": [
+    {
+      "email": "dean@labregister.edu.ng",
+      "full_name": "Dean of Science",
+      "role": "senior_leader",
+      "labs": []
+    },
+    {
+      "email": "hod.chem@labregister.edu.ng",
+      "full_name": "HOD Chemistry",
+      "role": "lab_hod",
+      "labs": [
+        "CHEM1",
+        "CHEM2"
+      ]
+    },
+    {
+      "email": "tech.chem@labregister.edu.ng",
+      "full_name": "Chemistry Technician",
+      "role": "technician",
+      "labs": [
+        "CHEM1",
+        "CHEM2"
+      ]
+    },
+    {
+      "email": "it.admin@labregister.edu.ng",
+      "full_name": "IT Administrator",
+      "role": "admin",
+      "labs": []
+    }
+  ]
+}
